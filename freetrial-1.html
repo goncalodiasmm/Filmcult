@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Filmcult | Free Trial</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/utilities.css">
+   <script defer src="js/form-1.js"></script>
+</head>
+
+<body>
+   <section class="hero">
+      <div class="bg-overlay"></div>
+      <!-- STEP HEADER -->
+      <header class="step-header flex">
+         <div class="container flex">
+            <div class="step flex">
+               <h3 class="text-center active">1</h3>
+               <p>Create Account</p>
+            </div>
+            <div class="step flex">
+               <h3 class="text-center text-light">2</h3>
+               <p class="text-light">Payment Details</p>
+            </div>
+            <div class="step flex">
+               <h3 class="text-center text-light">3</h3>
+               <p class="text-light">Start Watching</p>
+            </div>
+         </div>
+      </header>
+
+      <!-- FORM 1 -->
+      <form action="freetrial-2.html" method="GET" id="form-1">
+         <div class="container">
+            <div class="form-control">
+               <label for="fname">First Name</label>
+               <input type="text" id="fname">
+               <i class="fas fa-check-circle"></i>
+               <i class="fas fa-exclamation-circle"></i>
+               <small>Error Message</small>
+            </div>
+            <div class="form-control">
+               <label for="lname">Last Name</label>
+               <input type="text" id="lname">
+               <i class="fas fa-check-circle"></i>
+               <i class="fas fa-exclamation-circle"></i>
+               <small>Error Message</small>
+            </div>
+            <div class="form-control">
+               <label for="email">Enter Your Email</label>
+               <input type="text" id="email">
+               <i class="fas fa-check-circle"></i>
+               <i class="fas fa-exclamation-circle"></i>
+               <small id="error">Error Message</small>
+            </div>
+            <div class="form-control">
+               <label for="password">Create Password</label>
+               <input type="password" id="password">
+               <i class="fas fa-check-circle"></i>
+               <i class="fas fa-exclamation-circle"></i>
+               <small>Error Message</small>
+            </div>
+            <div class="flex">
+               <input type="checkbox" id="news" checked>
+               <p>Get up to date with the latest announcements and news from Filmcult</p>
+            </div>
+            <div class="flex">
+               <input type="checkbox" id="terms-privacy" required>
+               <p>I accept the Terms of Use and confirm that I have read and understand the Privacy
+                  Policy.</p>
+            </div>
+            <button type="submit" class="btn btn-outline btn-center">Continue</button>
+         </div>
+      </form>
+   </section>
+</body>
+
+</html>

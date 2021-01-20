@@ -1,0 +1,153 @@
+/* UTILITIES - CLASSES TO APPLY DIRECTLY ON HTML */
+
+/* CONTAINERS */
+.logo {
+   width: 8rem;
+}
+
+.container {
+   position: relative;
+   max-width: 1440px;
+   margin: 0 auto;
+   padding: 4rem 4rem;
+}
+
+/* BUTTONS */
+button {
+   outline: none;
+}
+
+.btn {
+   display: inline-block;
+   padding: 1rem 2rem;
+   background-color: var(--primary-color);
+   color: #fff;
+   font-family: inherit;
+   cursor: pointer;
+   border: none;
+   border-radius: 0.5rem;
+   font-size: 1rem;
+   transition: all 0.2s ease;
+   text-transform: uppercase;
+   letter-spacing: 0.0625rem;
+}
+
+.btn-outline {
+   border: 0.125rem solid var(--primary-color);
+   background-color: transparent;
+   color: #fff;
+}
+
+.btn-outline:hover {
+   background-color: var(--primary-color);
+}
+
+.btn-center {
+   display: flex;
+}
+
+/* TEXT */
+.text-primary {
+   color: var(--primary-color);
+}
+
+.text-dark {
+   color: var(--dark-color);
+}
+
+.text-light {
+   color: var(--light-color);
+}
+
+.text-center {
+   text-align: center;
+}
+
+.text-bold {
+   font-weight: bold;
+}
+
+/* RATING */
+.rating {
+   display: inline-block;
+   background-color: var(--primary-color);
+   border-radius: 50%;
+   padding: 0.5rem;
+}
+
+/* FORMS */
+form .container {
+   width: 50%;
+   margin: 0 auto;
+   padding: 0 4rem;
+}
+
+form input {
+   display: block;
+   border: 0.125rem solid transparent;
+   border-radius: 1rem;
+   padding: 1rem;
+}
+
+form input:focus {
+   outline: none;
+}
+
+form label {
+   text-transform: uppercase;
+   letter-spacing: 0.125rem;
+   color: var(--light-color);
+   font-size: 0.75rem;
+   margin-bottom: 0.5rem;
+}
+
+form .form-control {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 3rem;
+   position: relative;
+}
+
+form .flex {
+   justify-content: flex-start;
+}
+
+form a {
+   margin: 2rem auto;
+}
+
+form input::-webkit-outer-spin-button,
+form input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/* FLEX & GRID */
+.flex {
+   display: flex;
+   gap: 1rem;
+   align-items: center;
+   justify-content: center;
+}
+
+.grid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 2rem;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+}
+
+/* OVERLAYS */
+.bg-overlay {
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   background: rgba(0,0,0,0.6);
+}
+
+/* LINE DIVIDERS */
+.hline-bottom {
+   padding-bottom: 0.25rem;
+   border-bottom: 0.125rem solid var(--light-color);
+}

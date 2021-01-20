@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;500;700&display=swap');
+
+:root {
+   --primary-color: #2379eb;
+   --dark-color: #3d3d3d;
+   --light-color: #cccccc;
+   --bg-color: #141414;
+   --success-color: #2ecc71;
+   --error-color: #e74c3c; 
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: 'Mulish', sans-serif;
+   background-color: var(--bg-color);
+   color: #fff;
+}
+
+/* BASE STYLES */
+ul, li {
+   list-style-type: none;
+}
+
+a, button {
+   text-decoration: none;
+   color: #fff;
+   margin: 0 auto;
+}
+
+img {
+   width: 100%;
+}
+
+h1 {
+   font-size: 4rem
+}
+
+h2 {
+   font-size: 3rem;
+}
+
+h3 {
+   font-size: 2rem;
+}
+
+p {
+   font-size: 1rem;
+}
+
+/* HERO */
+.hero {
+   background: url('../images/hero.png') center;
+   height: 100vh;
+}
+
+.hero .container {
+   gap: 4rem;
+}
+
+.hero-main img {
+   width: 20rem;
+   margin-top: 1rem;
+}
+
+.hero-main a {
+   margin-top: 2rem;
+   margin-bottom: 0.5rem;
+}
+
+.hero-nav {
+   margin-left: 30rem;
+} 
+
+.hero-nav a {
+   font-size: 1.5rem;
+   font-weight: 700;
+}
+
+.hero-nav i {
+   margin-top: 40rem;
+}
+
+/* FEATURES */
+.features .container {
+   position: relative;
+}
+
+.features .flex {
+   flex-direction: column;
+}
+
+.features #img1 {
+   width: 75%;
+   margin-right: 9rem;
+   margin-top: 3rem;
+}
+
+.features #img2 {
+   width: 45%;
+   margin-top: 3rem;
+}
+
+/* FOOTER */
+.footer .container {
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.footer .social-media {
+   gap: 2rem;
+}
+
+.footer-info {
+   border-top: 0.125rem solid var(--dark-color);
+   padding-top: 1rem;
+}
+
+.footer p {
+   font-size: 0.75rem;
+   margin-top: 0.75rem;
+}
+
+.footer ul i {
+   color: var(--primary-color);
+   margin-top: 0.25rem;
+}
+
+/* STEP HEADER */
+.step-header .active {
+   border: 0.125rem solid #fff;
+   border-radius: 50%;
+   width: 3rem;
+   height: 3rem;
+}
+
+.step-header .step {
+   flex-direction: column;
+   gap: 0.5rem;
+   margin-right: 3rem;
+}
+
+.step-header .logo img {
+   width: 8rem;
+   position: absolute;
+   top: 0;
+   left: 0;
+} 
+
+/* FORM 1 */
+#form-1 .form-control i {
+   position: absolute;
+   color: #000;
+   top: 2.5rem;
+   right: 1.5rem;
+   visibility: hidden;
+}
+
+#form-1 .form-control small {
+   position: absolute;
+   top: 5rem;
+   left: 0;
+   visibility: hidden;
+}
+
+#form-1 .success input {
+  border: 0.125rem solid var(--success-color);
+}
+
+#form-1 .error input {
+   border: 0.125rem solid var(--error-color);
+}
+
+#form-1 .success i.fa-check-circle {
+   visibility: visible;
+   color: var(--success-color);
+}
+
+#form-1 .error i.fa-exclamation-circle {
+   visibility: visible;
+   color: var(--error-color);
+}
+
+#form-1 .error small {
+   color: var(--error-color);
+   visibility: visible;
+}
+
+#form-1 button {
+   margin-top: 2rem;
+}
+
+/* FORM 2 */
+
+#form-2 .form-control i {
+   position: absolute;
+   color: #000;
+   top: 2.5rem;
+   right: 1.5rem;
+   visibility: hidden;
+}
+
+#form-2 .form-control small {
+   position: absolute;
+   top: 5rem;
+   left: 0;
+   visibility: hidden;
+}
+
+#form-2 .success input {
+  border: 0.125rem solid var(--success-color);
+}
+
+#form-2 .error input {
+   border: 0.125rem solid var(--error-color);
+}
+
+#form-2 .success i.fa-check-circle {
+   visibility: visible;
+   color: var(--success-color);
+}
+
+#form-2 .error i.fa-exclamation-circle {
+   visibility: visible;
+   color: var(--error-color);
+}
+
+#form-2 .error small {
+   color: var(--error-color);
+   visibility: visible;
+}
+
+#form-2 .checkbox {
+   margin-bottom: 4rem;
+}
+
+#form-2 button {
+   margin-top: 0.5rem;
+}
+
+/* PLANS */
+.plans .container {
+   padding: 0 4rem;
+}
+.plans-table {
+   border-collapse: collapse;
+   margin: 0 auto;
+   min-width: 400px;
+}
+
+.plans-table thead tr th:not(.empty) {
+   background-color: var(--primary-color);
+   text-align: left;
+   color: var(--light-color);
+   font-weight: 500;
+}
+
+.plans-table thead tr th:not(.empty) span {
+   color: #fff;
+   font-weight: bold;
+   text-transform: uppercase;
+   display: block;
+}
+
+.plans-table th, .plans-table td {
+   padding: 1rem 1rem;
+}
+
+.plans-table tbody tr:nth-of-type(even) {
+   background-color: var(--dark-color);
+}
+
+.plans-table tbody tr:nth-of-type(odd) {
+   background-color: #000;
+}
+
+.plans-text {
+   margin: 4rem 0;
+}
+
+/* ACCOUNT DETAILS */
+.info, .plan, .payment {
+   background-color: #fff;
+   height: 20rem;
+   padding: 2rem;
+   margin: 2rem;
+   color: #000;
+   border-radius: 2rem;
+}
+
+.account-details .container {
+   padding: 1rem;
+}
+
+.account-details p {
+   margin: 0.25rem 0;
+}
+
+/* HOME NAVBAR */
+.navbar .container {
+   padding-bottom: 0;
+   margin-right: 11rem;
+   max-width: none;
+}
+
+.navbar .flex {
+   justify-content: space-between;
+}
+
+.nav-header .logo {
+   width: 12rem;
+}
+
+.nav-items .why-filmcult {
+   margin-right: 2rem;
+   border-bottom: 0.125rem solid transparent;
+   transition: all 0.2s ease-in-out;
+}
+
+.nav-items .why-filmcult:hover {
+   transform: translateY(-0.25rem);
+}
+
+.nav-items .search {
+   border: 0.125rem solid var(--dark-color);
+   border-radius: 1rem;
+   width: 14rem;
+   padding: 0.5rem 1rem;
+}
+
+.nav-items .search i {
+   color: var(--light-color);
+}
+
+.nav-items .profile p {
+   white-space: nowrap;
+}
+
+/* SIDEBAR */
+.sidebar {
+   float: left;
+}
+
+.sidebar .flex {
+   justify-content: flex-start;
+}
+
+.sidebar li {
+   margin-bottom: 3rem;
+}
+
+/* MAIN CONTENT */
+.main-content {
+   overflow: hidden;
+}
+
+.main-content .container {
+   margin-left: 0;
+}
+
+.main-content .grid {
+   grid-template-columns: repeat(4, 1fr);
+}
+
+.main-content h2 {
+   margin-bottom: 1rem;
+}
+
+.main-content .poster {
+   position: relative;
+}
+
+.main-content .poster .rating {
+   position: absolute;
+   top: 80%;
+   left: 94%;
+}
+
+.main-content .poster i {
+   position: absolute;
+   top: 2%;
+   left: 85%;
+   color: var(--dark-color);
+}
+
+.main-content .grid img:hover {
+   background-color: var(--primary-color);
+}
+
+.main-content .genre-select :nth-child(1) {
+   margin-left: 0;
+}
+
+/* WATCH MOVIE */
+.watch-movie .container {
+   position: relative;
+   background-image: url('../images/driveways-hero.jpg');
+   background-size: cover;
+   background-position: center;
+   overflow: hidden;
+   width: 60vw;
+   margin-top: 4rem;
+   border-radius: 2rem;
+}
+
+.watch-movie .title {
+   margin-bottom: 1rem;
+}
+
+.watch-movie .time-info {
+   padding: 0.5rem 0;
+   justify-content: flex-start;
+}
+
+.watch-movie .rating-info {
+   margin-bottom: 1rem;
+   justify-content: flex-start;
+}
+
+.watch-movie .movie-description {
+   width: 24rem;
+   margin-bottom: 2rem;
+}
+
+.watch-movie .play-download {
+   margin-bottom: 4rem;
+}
+
+.watch-movie .play-download a {
+   margin-right: 1rem;
+}
+
+.watch-movie .watch-trailer a {
+   justify-content: flex-end;
+   transition: all 0.2s ease-in-out;
+}
+
+.watch-movie .watch-trailer a:hover {
+   transform: translateY(-0.25rem)
+}
+
+.movie-trailer iframe {
+   position: relative;
+}
+
+.movie-trailer .back-btn {
+   position: absolute;
+   top: 100%;
+}
+
+/* FILMCULT EXPERIENCE */
+#filmcult-experience {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: var(--bg-color);
+}

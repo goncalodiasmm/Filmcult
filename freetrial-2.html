@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Filmcult | Free Trial</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/utilities.css">
+   <script defer src="js/form-2.js"></script>
+</head>
+
+<body>
+   <section class="hero">
+      <div class="bg-overlay"></div>
+      <!-- STEP HEADER -->
+      <header class="step-header flex">
+         <div class="container flex">
+            <a href="freetrial-1.html">
+               <div class="step flex">
+                  <h3 class="text-center text-light">1</h3>
+                  <p>Create Account</p>
+               </div>
+            </a>
+            <div class="step flex">
+               <h3 class="text-center active">2</h3>
+               <p>Payment Details</p>
+            </div>
+            <div class="step flex">
+               <h3 class="text-center text-light">3</h3>
+               <p class="text-light">Start Watching</p>
+            </div>
+         </div>
+      </header>
+
+      <!-- FORM 2 -->
+      <form action="freetrial-3.html" method="GET" id="form-2">
+         <div class="container">
+            <div class="form-control">
+               <label for="card">Credit Card Number</label>
+               <input type="number" id="card">
+               <i class="fas fa-check-circle"></i>
+               <i class="fas fa-exclamation-circle"></i>
+               <small>Error Message</small>
+            </div>
+            <div class="form-control">
+               <label for="holder">Card Holder</label>
+               <input type="text" id="holder">
+               <i class="fas fa-check-circle"></i>
+               <i class="fas fa-exclamation-circle"></i>
+               <small>Error Message</small>
+            </div>
+            <div class="flex">
+               <div class="form-control">
+                  <label for="exp-date">Expiration Date</label>
+                  <input type="text" id="exp-date" placeholder="Month / Year">
+                  <i class="fas fa-check-circle"></i>
+                  <i class="fas fa-exclamation-circle"></i>
+                  <small>Error Message</small>
+               </div>
+               <div class="form-control">
+                  <label for="cvv">CVV</label>
+                  <input type="number" id="cvv">
+                  <i class="fas fa-check-circle"></i>
+                  <i class="fas fa-exclamation-circle"></i>
+                  <small>Error Message</small>
+               </div>
+            </div>
+            <div class="checkbox flex">
+               <input type="checkbox" id="save" checked>
+               <p class="text-light">Save my card for future use</p>
+            </div>
+            <p class="text-light text-center">During the free trial, no debit will be made.</p>
+            <button type="submit" class="btn btn-outline btn-center">Continue</button>
+         </div>
+      </form>
+   </section>
+</body>
+
+</html>
